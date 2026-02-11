@@ -1,0 +1,401 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ducati Service Overview</title>
+
+  <!-- Required meta tags -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+        crossorigin="anonymous">
+
+  <style>
+    .site-footer {
+  background: linear-gradient(135deg, #0d6efd, #6610f2);
+  color: #fff;
+  padding: 60px 0 20px;
+  margin-top: 60px;
+}
+
+.site-footer h5 {
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.site-footer p {
+  font-size: 14px;
+  line-height: 1.8;
+  opacity: 0.9;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #ffd700;
+  padding-left: 5px;
+}
+
+.footer-section {
+  margin-bottom: 30px;
+}
+
+.site-footer hr {
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.footer-bottom {
+  text-align: center;
+  font-size: 13px;
+  opacity: 0.85;
+}
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #0f0f0f;
+      color: #fff;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .service-container {
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h1 {
+      color: #ff0000;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .intro {
+      text-align: center;
+      color: #ccc;
+      margin-bottom: 30px;
+    }
+
+    .service-box {
+      background: #1a1a1a;
+      padding: 20px;
+      border-left: 5px solid #ff0000;
+      margin-bottom: 20px;
+      border-radius: 6px;
+      transition: transform 0.3s ease;
+    }
+
+    .service-box:hover {
+      transform: translateY(-5px);
+    }
+
+    .service-box h2 {
+      margin-top: 0;
+      color: #ff4444;
+    }
+
+    .interval {
+      display: block;
+      font-size: 14px;
+      color: #aaa;
+      margin-bottom: 10px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    ul li {
+      margin-bottom: 8px;
+    }
+
+    .highlight {
+      border-color: #ff9900;
+    }
+
+    .warning {
+      color: #ffcc00;
+      margin-top: 15px;
+    }
+
+    .cost p {
+      margin: 8px 0;
+    }
+
+    .note {
+      font-size: 14px;
+      color: #bbb;
+    }
+
+    .tips {
+      background: linear-gradient(135deg, #ff0000, #990000);
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    .tips h2 {
+      color: #fff;
+    }
+
+    .tips ul li {
+      color: #f1f1f1;
+    }
+    .logo{
+          height: 80px;
+          width: 80px;
+        }
+        
+        section{
+          padding-bottom: 69px;
+
+        }
+        button{
+          padding:10px 20px;
+          background-color:green;
+           color:black;
+           border: 1px solid rgb(17, 218, 51) ;
+           border-radius: 60px;
+        }
+        button:hover{
+          background-color: black;
+          color:brown;
+          transition:0.2s;
+        }
+        .image1 img{
+          height: 50vh;
+        }
+        .card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Optional image zoom on hover */
+.card-img-top {
+  transition: transform 0.3s ease;
+}
+
+.card:hover .card-img-top {
+  transform: scale(1.05);
+}
+
+.about-ducati {
+  background: linear-gradient(135deg, #000000, #8b0000);
+  color: white;
+  padding: 80px 0;
+}
+
+.about-title {
+  font-size: 3rem;
+  font-weight: bold;
+  letter-spacing: 3px;
+  color: red;
+  text-transform: uppercase;
+  animation: glow 2s infinite alternate;
+}
+
+.about-subtitle {
+  font-size: 1.2rem;
+  color: #ccc;
+  margin-bottom: 20px;
+}
+
+.about-img {
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(255, 0, 0, 0.4);
+  transition: transform 0.4s ease;
+}
+
+.about-img:hover {
+  transform: scale(1.05) rotate(1deg);
+}
+
+.about-text p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #f2f2f2;
+}
+
+.about-btn {
+  margin-top: 15px;
+  padding: 12px 30px;
+  background: red;
+  border: none;
+  border-radius: 50px;
+  color: white;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.about-btn:hover {
+  background: white;
+  color: black;
+  transform: scale(1.1);
+}
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <img src="./logo.jpg" alt="" class="logo">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="./INDEX.html">HOME</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">ABOUT US</a>
+        </li>
+        <li class="nav-item dropdown">
+           <li class="nav-item">
+          <a class="nav-link" href="./service1.html">OUR SERVICES</a>
+        </li>
+          
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">CONTACT US</a>
+        </li>
+        
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Shearc">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<link rel="stylesheet" href="./service1.html">
+
+<div class="service-container">
+
+  <h1>🔧 Ducati Service Overview</h1>
+  <p class="intro">
+    Ducatis are high-performance bikes, so their service schedule is a bit more precise than regular motorcycles.
+  </p>
+
+  <div class="service-box">
+    <h2>🛢️ Regular / Minor Service</h2>
+    <span class="interval">Every 6,000–7,500 km or 6 months</span>
+    <ul>
+      <li>Engine oil change</li>
+      <li>Oil filter replacement</li>
+      <li>Air filter cleaning/check</li>
+      <li>Chain cleaning & lubrication</li>
+      <li>Brake check</li>
+      <li>Coolant check</li>
+      <li>General inspection</li>
+    </ul>
+  </div>
+
+  <div class="service-box highlight">
+    <h2>⚙️ Major Service (Desmo Service)</h2>
+    <span class="interval">Every 24,000–30,000 km (model dependent)</span>
+    <ul>
+      <li>Valve clearance adjustment</li>
+      <li>Timing belt inspection / replacement</li>
+      <li>Spark plug replacement</li>
+      <li>Throttle body synchronization</li>
+      <li>ECU diagnostics</li>
+    </ul>
+    <p class="warning">
+      ⚠️ This service is important and expensive, but critical for engine life.
+    </p>
+  </div>
+
+  <div class="service-box">
+    <h2>🧰 Annual Check</h2>
+    <ul>
+      <li>Brake fluid replacement</li>
+      <li>Coolant replacement (every 2–4 years)</li>
+      <li>Battery health check</li>
+      <li>Software updates (authorized service center)</li>
+    </ul>
+  </div>
+
+  <div class="service-box cost">
+    <h2>💰 Service Cost (Approx.)</h2>
+    <p>Minor Service: <strong>💵 Medium</strong></p>
+    <p>Major / Desmo Service: <strong>💵💵💵 High</strong></p>
+    <p class="note">
+      Authorized Ducati service is more expensive but recommended.
+    </p>
+  </div>
+
+  <div class="tips">
+    <h2>🏁 Tips for Ducati Owners</h2>
+    <ul>
+      <li>Always warm up the engine properly</li>
+      <li>Stick to service intervals strictly</li>
+      <li>Use recommended oil</li>
+      <li>Avoid cheap local mechanics for major service</li>
+    </ul>
+  </div>
+
+</div>
+
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-md-4 footer-section">
+        <h5>Social Media</h5>
+        <p>facebook</p>
+         <p>instagram</p>
+         <p>tiktok</p>
+      </div>
+
+      <div class="col-md-4 footer-section">
+        <h5>Quick Links</h5>
+        <ul class="footer-links">
+          <li><a href="./INDEX.html">Home</a></li>
+          <li><a href="./service1.html">Our Service</a></li>
+          <li><a href="./about.html">About Us</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-4 footer-section">
+        <h5>Contact</h5>
+        <p>Email: ducatiservice@gmail.com</p>
+        <p>Phone: 01-6652121 | 01-5542876</p>
+      </div>
+
+    </div>
+
+    <hr>
+
+    <div class="footer-bottom">
+      <p>© "In Lightness My Strength" </p>
+    </div>
+  </div>
+</footer>
+
+
+</body>
+</html>
